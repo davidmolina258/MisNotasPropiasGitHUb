@@ -1,0 +1,110 @@
+ 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 llave
+1.- inicializar el repositorio Git en la carpeta donde se aloja el archivo que 
+queremos versionar con el comando **git init**.
+
+con **git init** 
+se crea un espacio en la Ram llamado Stagin y un repositorio,este es
+invisible  o esta oculto y se crea dentro de la carpeta del proyecto, 
+esa carpeta se llama .Git y es precisamente en la carpeta .Git donde se incializa
+una rama llamada MASTER. 
+Ademas .Git recorre todos los archivos de mi proyecto y les agrega un estado 
+Untrack, es decir sin seguimiento.
+
+NOTA: La idea es que nuestro archivo pase al repositorio (.Git), pero antes se debe
+tener un estado Track, ese estado track se guarda en Stagin. 
+
+2.- para pasar nuestro archivo a Track es decir, con seguimiento usamos el comando
+**git add** mas el nombre del archivo.
+
+3.-Una vez nuestro archivo tenga seguimiento o un estado Track, podemos pasarlo
+al repositorio usando el comando **git commit -m"mensaje descriptivo"**
+
+un **git commit** es una version del proyecto, la version actual de nuestro proyecto
+se conoce como HEAD.
+Ademas de la RAMA MASTER se pueden crear otras Ramas mas para Desarrollo y Pruebas por ejemplo.
+
+************************Comandos de Git:
+
+git status => muesta el estado de nuestros archivos untrack o track
+
+git log --oneline => muestra el codigo de todad las versiones anteriores y actual
+git checkout 4cd60b1 => se puede viajar de una version a otra conociendo su codigo
+
+git log => muestra informacion de cada commit o version del archivo mas detallada
+git show => muestra el historial de cambios en la versiones.
+
+git add . => agrego todos mis archivos al staging o track al mismo tiempo.
+
+git branch => enlista todas las ramas que tengo creadas
+
+git clone => clona el proyecto completo y lo almacena en nuestra pc
+
+git push => Envia un commit al repositorio remoto
+
+git Pull => trae el ultimo commit o version de una rama determinada
+
+git commit -am "mensaje" => hace el add y el mensaje en un solo comando, PEROO solo a los archivos que antes hayan teniado un add 
+  
+    
+
+*******************Los commit sin Mensaje
+Los Commit sin mensajes no son tomados en cuenta, pero si en algun momento se envia
+si mensaje hacer lo siguinte:
+1.- presionar ESC y despues la tecla i (de insertar).
+2.- escribir el mensaje.
+3.- guardamos presionando ESC, despues shitf, y darle zz.
+
+********************* Para eliminar un commit (reset)
+para eliminar un commit es necesario conocer el codigo unico de ese commit
+y usar un comando llamaado *git reset*
+hay dos tipos de (git reset codigo --hard y --soft)
+hard, elimina todo
+soft, elimina pero conserva los cambios de staging.
+
+
+***************para crear una rama en GIT
+git branch nombre,
+para poder movernos de una rama a otra usar (git checkout rama)
+NOTA: cuando estemos en una rama, los heads pueden ser distintos, por lo que 
+dependiendo de la rama en la que me encuentra 
+
+***********para unir tus ramas Git Mergue
+
+Cuando creamos un Mergue, se crea un nuevo commit o version de proyecto a partir 
+de las ultimas versiones de las ramas por unir, por ende el commit de union 
+compartiran un mismo head o version actual.
+
+Al momento de ejecutar el comando Mergue es importante tener en cuenta en la rama
+en la que estamos posicionados.
+
+git checkout master => para pararte en la rama mater.
+
+despues ejecutar git merge nombre(rama que quieres unir). 
+
+*************que son los COnflictos y Resolverlos.
+
+Los conflictos se generan cuando se modifica la linea del archivo en ambas ramas 
+y luego intentamos hacer un merge en la rama master.
+
+La solucion no esmas que acordar que cambio se quedara, y luego haciendo un commit
+nuevo.
+
+*****************Como clonar y traer ultimas version desde un repositorio Remoto
+
+git clone url=> se utiliza cunado queremos traer un proyecto completo a nuestro ordenador.
+es necesario crear una caperta donde queremos que aterreize nuestro proyecto, a partir de alli abrimos nuestra consola de 
+git y ejecutamos en comando *-git clone url-* 
+
+
+ 
+ 
+  
+
+
+ 
+
+
+ 
+
+
+ 
