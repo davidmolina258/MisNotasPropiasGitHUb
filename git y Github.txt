@@ -89,12 +89,18 @@ y luego intentamos hacer un merge en la rama master.
 La solucion no esmas que acordar que cambio se quedara, y luego haciendo un commit
 nuevo.
 
+*****************Git Push
+git push -u origin master
+
 *****************Como clonar y traer ultimas version desde un repositorio Remoto
 
-git clone url=> se utiliza cunado queremos traer un proyecto completo a nuestro ordenador.
+----> git clone url=> se utiliza cunado queremos traer un proyecto completo a nuestro ordenador.
 es necesario crear una caperta donde queremos que aterreize nuestro proyecto, a partir de alli abrimos nuestra consola de 
 git y ejecutamos en comando *-git clone url-* 
 
+----> git pull origin(apodo) master=> se utiliza para traer el ultimo commit hecho sobre el archivo, a 
+nuestra computadora, IMPORTANTE abrir situar la consola en la carpeta que clonamos, bien sea con el comando cd o
+click derecho y seleccionar "git bash here", es decir una nueva consola  
 
  
  
